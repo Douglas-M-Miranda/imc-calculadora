@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containerImagem">
+        <img src="" alt="">
+    </div>
+
+    <main class="card">
+        <header class="cabecalho">
+            <h1>Calculadora - IMC</h1>
+        </header>
+
+        <section>            
+            <form>
+                <div class="ContainerInputPeso">
+                    <label>
+                        Peso em kg
+                        <input type="text" name="inputAltura" class="inputPeso" required />
+                    </label>
+                    <span>Kg</span>
+                </div>
+
+                <div class="containerInputAltura">
+                    <label>
+                        Altura em metros
+                        <input type="number" name="inputAltura" class="inputAltura" required>
+                    </label>
+                    <span>m</span>
+                </div>
+
+                <div class="containerBotao">
+                    <button type="submit">
+                        Calcular
+                    </button>
+                </div>
+            </form>
+        </section>
+        <aside class="containerResultado">
+            <hr />
+
+            <div class="imc">
+                <span class="numeroImc">20,81</span>
+                
+                <span class="seuImc">Seu imc</span>
+            </div>
+            
+            <div class="textoResultado">
+                <span class="textoImc">
+                    Você esta no peso ideal!
+                </span>
+            </div>
+
+            <hr />
+        </aside>
+
+        <footer>
+            <p><a href="https://abeso.org.br/obesidade-e-sindrome-metabolica/calculadora-imc/">Mais informações sobre o IMC</a></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
