@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="containerImagem">
-        <img src="" alt="">
+        <img src="assets/background-image.png" alt="Desenho de uma mulher se exercitando.">
     </div>
 
     <main class="card">
         <header class="cabecalho">
             <h1>Calculadora - IMC</h1>
+            <hr />
         </header>
 
-        <section>            
+        <section class="containerForm">            
             <form>
                 <div class="ContainerInputPeso">
+                    <span class="tituloInput">Peso em kg</span>
                     <label>
-                        Peso em kg
-                        <input type="text" name="inputAltura" class="inputPeso" required />
+                       <input type="text" name="inputAltura" class="inputPeso" required />
                     </label>
-                    <span>Kg</span>
+                    <span class="kg">Kg</span>
                 </div>
 
                 <div class="containerInputAltura">
+                    <span class="tituloInput">Altura em metros</span>
                     <label>
-                        Altura em metros
                         <input type="number" name="inputAltura" class="inputAltura" required>
                     </label>
-                    <span>m</span>
+                    <span class="m">m</span>
                 </div>
 
                 <div class="containerBotao">
@@ -41,9 +45,10 @@
                 </div>
             </form>
         </section>
-        <aside class="containerResultado">
-            <hr />
 
+        <hr />
+        
+        <aside class="containerResultado">
             <div class="imc">
                 <span class="numeroImc">20,81</span>
                 
@@ -55,9 +60,9 @@
                     Você esta no peso ideal!
                 </span>
             </div>
-
-            <hr />
         </aside>
+        
+        <hr />
 
         <footer>
             <p><a href="https://abeso.org.br/obesidade-e-sindrome-metabolica/calculadora-imc/">Mais informações sobre o IMC</a></p>
