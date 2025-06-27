@@ -10,10 +10,14 @@ input[type=number] {
   --backgroundCard-color: #7ef3bf;
   --backgroundInput-color: #90f5c9;
   --backgroundbutton-color: #13db82;
+  --backgroundButtonActive-color: #4ff1a8;
   --title-color: #004225;
   --textInput-color: #373d49;
+  --textButton-color: black;
   --imc-color: #01ce01;
   --barTitle-color: #000000;
+  --borderCard-color: #90f5c9;
+  --boxShadowCard-color: #7ef3bfb8;
 }
 
 * {
@@ -37,13 +41,12 @@ body {
 
 /* configuração geral do bloco da calculadora */
 .card {
-  /* height: 20%;  formatar o resto primeiro*/
   width: 20%;
   
   background-color: var(--backgroundCard-color);
-  border: 1px solid #90f5c9;
+  border: 1px solid var(--borderCard-color);
   border-radius: 10px;
-  box-shadow: 0px 0px 17px -3px rgba(126,243,191,0.72);
+  box-shadow: 0px 0px 17px -3px var(--boxShadowCard-color);
 }
 
 /* configuração do cabeçalho */
@@ -67,7 +70,6 @@ body {
   width: 20%;
 }
 
-/* configuração geral dos input */
 
 /* configura input peso */
 .ContainerInputPeso {
@@ -137,11 +139,11 @@ button {
   cursor: pointer;
   background-color: var(--backgroundbutton-color);
   border: none;
-  color: black;
+  color: var(--textButton-color);
 }
 
 button:active {
-  background-color: #4ff1a8;
+  background-color: var(--backgroundButtonActive-color);
 }
 
 /* configuração resultado */

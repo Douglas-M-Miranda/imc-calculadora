@@ -6,9 +6,20 @@ function pegarValor(e){
     const formValor = new FormData(e.target);
     let valorPeso = Number(formValor.get("inputPeso"));
     let valorAltura = Number(formValor.get("inputAltura"));
-
     const resultado = valorPeso / (valorAltura * valorAltura)
     
+    console.log(valorAltura)
+    
+    if(!valorPeso || !valorAltura || isNaN(valorPeso) || isNaN(valorAltura)){
+        alert("Digite um número valido.")
+        return;  
+    }
+    
+    if(valorPeso <= 0 || valorAltura <=0){
+        alert("Digite um número valido.")
+        return;
+    }
+
     receberValor(resultado)
 }
 
