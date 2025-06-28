@@ -98,6 +98,7 @@ form input {
   margin: 0 1em 0 1em;
   background-color: var(--backgroundInput-color);
   border: none;
+  padding-left: 8px;
 }
 
 form input:focus {
