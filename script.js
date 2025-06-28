@@ -27,9 +27,14 @@ form.addEventListener('submit', pegarValor);
 
 function receberValor(resultado) {
     let condição = "você está";
-    const numeroImc = document.querySelector(".numeroImc")
-    const textoImc = document.querySelector(".textoImc")
- 
+    const numeroImc = document.querySelector(".numeroImc");
+    const textoImc = document.querySelector(".textoImc");
+    const esconder = document.querySelectorAll(".esconder");
+    
+    esconder.forEach(esconder => {
+        esconder.classList.remove("esconder")
+    })
+
     if(resultado < 18.5){
         numeroImc.textContent = resultado.toFixed(2);
         textoImc.textContent = condição.concat(" abaixo do normal");
